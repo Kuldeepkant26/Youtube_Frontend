@@ -15,6 +15,7 @@ function VideoUpload() {
     const [category, setCategory] = useState('');
 
     const handleUpload = async () => {
+        toast.info("Loading wait");
         try {
             if (videoUrl === '' || thumbnailUrl === '' || title === '' || description === '' || category === '') {
                 return toast.warn("Fillup all fields");
@@ -48,7 +49,6 @@ function VideoUpload() {
 
     };
     const handelCreateNow = () => {
-
         setShowVideoUpload(false)
         setShowCreateChannel(true)
     }

@@ -23,6 +23,7 @@ function ShowVideo() {
 
     const [comment, setComment] = useState('');
     const submitComment = async () => {
+        toast.info("Loading wait");
         try {
             console.log('commenting')
             if (!curruser) {
@@ -44,6 +45,7 @@ function ShowVideo() {
         }
     }
     const handelCopy = () => {
+
         navigator.clipboard.writeText(shareLink).then(() => {
             toast.success('Link copied to clipboard');
         }).catch(err => {
@@ -51,6 +53,7 @@ function ShowVideo() {
         });
     };
     const handelLike = async () => {
+       
         try {
             console.log('like')
             if (!curruser) {

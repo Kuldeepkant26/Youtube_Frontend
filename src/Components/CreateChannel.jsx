@@ -11,6 +11,7 @@ function CreateChannel() {
 
 
     const createChannel = async () => {
+        toast.info("Loading wait");
         try {
             if (name === '' || logo === '' || banner === '') {
                 return toast.warn("Fillup all fields");

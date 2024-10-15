@@ -10,6 +10,7 @@ function Login() {
     const [password, setPassword] = useState('');
 
     async function handelLogin() {
+        toast.info("Loading wait");
         try {
             if (email === '' || password === '') {
                 return toast.warn("Fillup all fields");
