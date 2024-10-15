@@ -25,6 +25,9 @@ const MyProvider = ({ children }) => {
     }
     const fetchCurrUser = async () => {
         const token = localStorage.getItem('ytc-auth-token');
+        if (!token) {
+            return setCurruser(null);
+        }
         try {
             const response = await axios.get(`${import.meta.env.VITE_BURL}/auth/getuser`, {
                 headers: {
