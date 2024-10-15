@@ -11,23 +11,28 @@ function Home() {
         <div className="home">
             <div className="home-top">
                 <div className="filter" onClick={() => { setFilter('') }}>All</div>
-                <div className="filter">News</div>
-                <div className="filter">Gaming</div>
-                <div className="filter">Javascript</div>
-                <div className="filter">Job</div>
-                <div className="filter">Live</div>
-                <div className="filter">Music</div>
-                <div className="filter">Education</div>
-                <div className="filter">Software</div>
-                <div className="filter">Development</div>
-                <div className="filter">World Affairs</div>
-                <div className="filter">Comedy</div>
-                <div className="filter">Stocks</div>
-                <div className="filter">Watched</div>
-                <div className="filter">Java</div>
-
+                <div className="filter" onClick={() => setFilter('news')}>News</div>
+                <div className="filter" onClick={() => setFilter('gaming')}>Gaming</div>
+                <div className="filter" onClick={() => setFilter('javascript')}>Javascript</div>
+                <div className="filter" onClick={() => setFilter('education')}>Education</div>
+                <div className="filter" onClick={() => setFilter('software')}>Software</div>
+                <div className="filter" onClick={() => setFilter('development')}>Development</div>
+                <div className="filter" onClick={() => setFilter('world-affairs')}>World Affairs</div>
+                <div className="filter" onClick={() => setFilter('java')}>Java</div>
+                <div className="filter" onClick={() => setFilter('job')}>Job</div>
+                <div className="filter" onClick={() => setFilter('live')}>Live</div>
+                <div className="filter" onClick={() => setFilter('music')}>Music</div>
+                <div className="filter" onClick={() => setFilter('comedy')}>Comedy</div>
+                <div className="filter" onClick={() => setFilter('stocks')}>Stocks</div>
+                <div className="filter" onClick={() => setFilter('watched')}>Watched</div>
+                <div className="filter" onClick={() => setFilter('sports')}>Sports</div>
+                <div className="filter" onClick={() => setFilter('movies')}>Movies</div>
+                <div className="filter" onClick={() => setFilter('technology')}>Technology</div>
+                <div className="filter" onClick={() => setFilter('fashion')}>Fashion</div>
+                <div className="filter" onClick={() => setFilter('travel')}>Travel</div>
+                <div className="filter" onClick={() => setFilter('health')}>Health</div>
+                <div className="filter" onClick={() => setFilter('fitness')}>Fitness</div>
             </div>
-
             <div className="home-side">
                 <div className='side-btn'>
                     <i className="ri-home-5-fill"></i>
