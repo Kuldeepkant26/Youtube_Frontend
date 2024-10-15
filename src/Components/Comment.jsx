@@ -5,14 +5,34 @@ import { toast } from 'react-toastify';
 function Comment({ comment, id }) {
     const { curruser, video, fetchVideo } = useContext(MyContext);
     const [showmenu, setShowmenu] = useState(false);
+    const [showCedit, setShowCedit] = useState(false);
+    const [newcomment, setNewcomment] = useState(comment.text);
     async function DeleteComment() {
         try {
+            toast.info('Deleting...')
             const res = await axios.delete(`${import.meta.env.VITE_BURL}/videos/comment/delete/${video._id}/${comment._id}`);
             console.log(res)
             toast.success(res.data.message);
             fetchVideo(id);
         } catch (error) {
             toast.error('Error in deleting comment')
+        }
+    }
+    async function handelCommentEdit() {
+        try {
+
+            if (newcomment === '') {
+                return toast.warn("Can't be empty")
+            }
+            toast.info('Updating...')
+            const res = await axios.put(`${import.meta.env.VITE_BURL}/videos/comment/update/${comment._id}`, {
+                newcomment
+            });
+            console.log(res)
+            toast.success(res.data.message);
+            fetchVideo(id);
+        } catch (error) {
+            toast.error('Error in updating comment')
         }
     }
 
@@ -36,7 +56,7 @@ function Comment({ comment, id }) {
                 <div className="commnent-menu flex-col " style={{ display: showmenu ? 'flex' : 'none' }}>
                     {curruser && curruser._id == comment.user._id ?
                         <>
-                            <span className='options'>Edit</span>
+                            <span className='options' onClick={() => { setShowCedit(true), setShowmenu(false) }}>Edit</span>
                             <span onClick={DeleteComment} className='options'>Delete</span>
                         </> :
                         <>
@@ -48,6 +68,10 @@ function Comment({ comment, id }) {
 
                 </div>
                 <i className="ri-more-2-line cursor-pointer" onClick={() => setShowmenu(!showmenu)}></i>
+            </div>
+            <div className="comment-edit" style={{ display: showCedit ? 'flex' : 'none' }}>
+                <input type="text" value={newcomment} onChange={(e) => setNewcomment(e.target.value)} />
+                <button onClick={() => { handelCommentEdit(), setShowCedit(false) }}>Save changes</button>
             </div>
         </div>
     )
