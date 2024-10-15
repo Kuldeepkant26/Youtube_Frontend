@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React, { createContext, useEffect, useState } from 'react';
+import { toast } from 'react-toastify';
 
 // Create a Context 
 export const MyContext = createContext();
@@ -20,6 +21,7 @@ const MyProvider = ({ children }) => {
     const logout = () => {
         localStorage.removeItem('ytc-auth-token');
         setCurruser(null);
+        toast.info("Logout successfully");
     }
     const fetchCurrUser = async () => {
         const token = localStorage.getItem('ytc-auth-token');

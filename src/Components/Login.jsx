@@ -5,7 +5,7 @@ import { MyContext } from '../Context/MyProvider';
 import axios from 'axios';
 import { toast } from 'react-toastify';
 function Login() {
-    const { showsignup, setShowsignup, showlogin, setShowlogin, setCurruser } = useContext(MyContext);
+    const { showsignup, setShowsignup, showlogin, setShowlogin, setCurruser, fetchCurrUser } = useContext(MyContext);
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -23,6 +23,8 @@ function Login() {
             setPassword('')
             setShowlogin(false);
             toast.success(res.data.message)
+
+            fetchCurrUser();
 
         } catch (error) {
             toast.error(error.response.data.message);
