@@ -145,7 +145,6 @@ nav .sidebar {
 
 nav .sidebar .left {
     width: 240px;
-
     display: flex;
     flex-direction: column;
     background-color: white;
