@@ -57,7 +57,7 @@ function Navbar() {
                 <div className="right">
                     <i id='sec-searchbtn' className="ri-search-line" onClick={() => navigate('/search')}></i>
                     <i id='vid-add' className="ri-video-add-line" onClick={() => setShowVideoUpload(true)}></i>
-                    <i className="ri-notification-2-line" onClick={() => setshowNotification(true)}></i>
+                    <i className="ri-notification-2-line hidden md:block" onClick={() => setshowNotification(true)}></i>
                     {!localStorage.getItem('ytc-auth-token') ?
                         <div id="signup-btn" onClick={() => setShowsignup(true)}>
                             <i className="ri-account-circle-line"></i>
