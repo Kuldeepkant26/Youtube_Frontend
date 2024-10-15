@@ -1,4 +1,9 @@
 # React + Vite
+# Warning -----------------------------------
+ Dont open in chrome , open in another browser
+
+Live link - https://youtube-frontend-bn7y.vercel.app/
+
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
@@ -10,7 +15,7 @@ Currently, two official plugins are available:
 # YouTube Clone - Frontend
 
 This is the frontend of a YouTube clone application built with **React**, **React Router**, and **Axios**. The app allows users to browse, search, and filter videos, authenticate, manage channels, and interact with videos.
-Live link (warning Fixed) - https://youtube-frontend-bn7y.vercel.app/
+
 
 ## Features
 
