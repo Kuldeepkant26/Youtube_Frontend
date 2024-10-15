@@ -149,8 +149,7 @@ nav .sidebar .left {
     display: flex;
     flex-direction: column;
     background-color: white;
-    box-shadow: 5px 5px 10px #f0f0f0,
-        -5px -5px 10px #ffffff;
+   
     overflow-y: auto;
     scrollbar-width: none;
     -ms-overflow-style: none;
