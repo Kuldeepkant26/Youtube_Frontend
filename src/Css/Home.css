@@ -1,0 +1,113 @@
+.home {
+    width: 100%;
+    height: 100vh;
+    /* background-color: yellow; */
+    padding-top: 4rem;
+    position: relative;
+}
+
+.home-top {
+    width: 100%;
+    padding: 10px 20px;
+   
+    display: flex;
+    padding-left: 6rem;
+    overflow: scroll;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    gap: 1rem;
+    
+}
+
+.home-top .filter {
+    background-color: rgba(0, 0, 0, 0.088);
+    width: fit-content;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    text-wrap: nowrap;
+}
+
+.home-top .filter:hover {
+    background-color: rgba(0, 0, 0, 0.16);
+
+}
+
+
+.home-bottom {
+    width: 100%;
+    height: calc(100% - 4rem);
+    /* Added spaces around the subtraction */
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: auto;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+    padding-left: 5rem;
+    padding-top: 1rem;
+}
+
+.home-side {
+    position: absolute;
+    top: 4rem;
+    left: 0px;
+    height: calc(100% - 4rem);
+    padding: 2px;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 9;
+    background-color:white;
+}
+
+.home-side .side-btn {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 3px;
+    font-size: 1.5rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.home-side .side-btn:hover {
+    background-color: rgba(0, 0, 0, 0.101);
+}
+
+.home-side p {
+
+    font-size: 0.7rem;
+}
+
+.home-side .side-btn img {
+
+    mix-blend-mode: darken;
+    width: 1.5rem;
+}
+
+@media (max-width:600px) {
+
+    .home-side {
+        display: none;
+    }
+
+    .home-top {
+        padding-left: 0px;
+        padding: 1rem;
+    }
+
+    .home-bottom {
+        gap: 2rem;
+        padding-left: 0px;
+        padding-top: 1rem;
+       
+      
+       
+
+    }
+
+}

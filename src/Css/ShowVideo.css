@@ -1,0 +1,362 @@
+.video-show-page {
+    width: 100%;
+    height: 100vh;
+    padding: 4rem;
+    display: flex;
+    padding-bottom: 0px;
+    gap: 2rem;
+    position: relative;
+}
+
+.video-show-page .left {
+    width: 60%;
+    height: 100%;
+    padding-bottom: 3rem;
+    overflow-y: auto;
+    scrollbar-width: none;
+}
+
+.video-show-page .s-right {
+   
+    width: 40%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  
+
+}
+
+
+.video-show-page .left video {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.video-show-page .left .desc {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.video-show-page .left .btns {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.video-show-page .left .btns img {
+    width: 3.7rem;
+    height: 3.7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.video-show-page .left .btns .subscribe {
+    padding: 8px 20px;
+    background-color: black;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+}
+
+.video-show-page .left .btns .like {
+    display: flex;
+    margin-left: 2rem;
+
+}
+
+.video-show-page .left .btns .like i {
+    display: flex;
+    gap: 1rem;
+    font-size: 1.3rem;
+    cursor: pointer;
+    color: gray;
+    padding: 5px 20px;
+    background-color: rgba(0, 0, 0, 0.075);
+    outline: none;
+    border: 0px;
+}
+
+.video-show-page .left .btns .like i:hover {
+    background-color: rgba(0, 0, 0, 0.132);
+}
+
+.video-show-page .left .btns .like .llike {
+    padding-left: 1rem;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.video-show-page .left .btns .like .dislike {
+    border-left: 1px solid gray;
+    padding-left: 1rem;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.video-show-page .left .btns .share {
+    background-color: rgba(0, 0, 0, 0.075);
+    padding: 6px 20px;
+    border-radius: 20px;
+}
+
+.video-show-page .left .btns .share:hover {
+    background-color: rgba(0, 0, 0, 0.132);
+}
+
+.video-show-page .left .btns .share i {
+    font-size: 1.3rem;
+}
+
+.video-show-page .left .btns .menu {
+    background-color: rgba(0, 0, 0, 0.075);
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+.video-show-page .left .btns .menu:hover {
+    background-color: rgba(0, 0, 0, 0.132);
+}
+
+.video-show-page .left .description {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.068);
+    margin-top: 1rem;
+    border-radius: 20px;
+}
+
+.video-show-page .left .description .vd {
+    font-weight: 600;
+}
+
+.video-show-page .left .comments {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    /* border: 1px solid salmon; */
+    padding: 1rem;
+
+}
+
+.video-show-page .left .comments .comment-box {
+    width: 100%;
+    display: flex;
+    align-items: center;
+
+}
+
+.video-show-page .left .comments .comment-box img {
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+
+    object-fit: cover;
+
+}
+
+.video-show-page .left .comments .comment-box .cright {
+    width: 100%;
+}
+
+.video-show-page .left .comments .comment-box .cright input {
+    width: 100%;
+    outline: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    margin-left: 1rem;
+    padding: 10px 0px;
+}
+
+.video-show-page .left .comments .comment-box .cright .cbtns {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+    margin-top: 5px;
+}
+
+
+.video-show-page .left .comments .comment-box .cright .cbtns .cancel-comment {
+    padding: 6px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.video-show-page .left .comments .comment-box .cright .cbtns .submit-comment {
+    padding: 6px 20px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.063);
+    cursor: pointer;
+}
+
+.video-show-page .left .comments .comment-box .cright .cbtns div:hover {
+    background-color: rgba(0, 0, 0, 0.063);
+}
+
+.all-comments {
+    width: 100%;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.063);
+    margin-top: 1rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: start;
+
+    max-height: 200px;
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+.share-box {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    /* Adjust the px value to control the amount of blur */
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+
+    justify-content: center;
+    padding-top: 6rem;
+}
+
+.share-box .box {
+
+    background-color: white;
+    height: fit-content;
+    display: flex;
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 1rem;
+    gap: 1rem;
+}
+
+.share-box .box .top {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.share-box .box .link {
+
+    color: rgb(40, 40, 225);
+    text-wrap: wrap;
+
+}
+
+.share-box .box button {
+    background-color: black;
+    padding: 5px 20px;
+    width: fit-content;
+    margin: 1rem;
+    color: white;
+    border-radius: 20px;
+}
+
+@media (max-width:850px) {
+    .video-show-page {
+        width: 100%;
+        height: fit-content;
+        display: flex;
+        padding-bottom: 0px;
+        gap: 2rem;
+        flex-direction: column;
+        padding: 0px;
+        padding-top: 5rem;
+
+        /* overflow-y: scroll; */
+        position: relative;
+        scrollbar-width: none;
+    }
+
+    .video-show-page .left {
+        width: 100%;
+
+
+
+        overflow-y: visible;
+        padding-top: 56vw;
+        height: fit-content;
+        padding-bottom: 0px;
+
+
+    }
+
+    .video-show-page .left video {
+        width: 100%;
+        border-radius: 0px;
+        position: fixed;
+        top: 4rem;
+        left: 0px;
+        z-index: 2;
+    }
+
+    .video-show-page .left .btns .subscribe {
+        margin-left: 20vw;
+    }
+
+    .video-show-page .left .btns .like {
+        display: flex;
+        margin-left: 1rem;
+
+    }
+
+
+    .video-show-page .s-right {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        overflow-y: visible;
+        height: fit-content;
+        padding-bottom: 8rem;
+
+
+    }
+
+    .share-box .box {
+
+        width: 80%;
+    }
+}
+
+@media (max-width:600px) {
+    .share-box .box {
+
+        width: 98%;
+
+    }
+
+    .share-box .box .link {
+
+        color: rgb(40, 40, 225);
+        text-wrap: wrap;
+        font-size: 0.8rem;
+
+
+    }
+
+    .video-show-page .s-right {
+        flex-direction: column;
+
+    }
+}

@@ -1,0 +1,45 @@
+.video-card {
+    width: 350px;
+    height: 250px;
+    height: fit-content;
+    cursor: pointer;
+   position: relative;
+    overflow: hidden;
+}
+
+/*  */
+
+.video-card .thumb {
+    height: 60%;
+    width: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.video-card .first {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.video-card .first img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+
+}
+
+@media (max-width:600px) {
+    .video-card {
+        width: 100%;
+  
+    }
+    .video-card .thumb {
+        height: 60%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+    }
+
+}

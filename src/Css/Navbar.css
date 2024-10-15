@@ -1,0 +1,355 @@
+nav {
+    width: 100%;
+
+    padding: 0.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    z-index: 10;
+    background-color: white;
+}
+
+nav .left {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 240px;
+
+}
+
+nav .left i {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+nav .left .yti {
+    color: #FF0000;
+    font-size: 2rem;
+
+}
+
+nav .left h2 {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 1000;
+}
+
+nav .left h2 span {
+    position: relative;
+    bottom: 7px;
+    font-size: 0.6rem;
+    opacity: 0.7;
+}
+
+
+/* Mid of nav  */
+nav .mid {
+
+
+    display: flex;
+    align-items: center;
+    border-radius: 25px;
+
+    border: 1px solid grey;
+    overflow: hidden;
+}
+
+nav .mid .search {
+    display: flex;
+    align-items: center;
+    padding: 0.2rem;
+    border-right: 0px;
+}
+
+nav .mid .search .sbar {
+    display: flex;
+    height: 100%;
+
+}
+
+nav .mid .search .sbar input {
+    width: 40vw;
+    font-size: 1rem;
+    border: 0px;
+    outline: none;
+}
+
+#sbtn {
+    height: 100%;
+    font-weight: 400;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    border-left: 1px solid black;
+    cursor: pointer;
+
+}
+
+.your-profile {
+    width: 2.4rem;
+    height: 2.4rem;
+    object-fit: cover;
+    border-radius: 50%;
+   
+}
+
+#sbtn:hover {
+    background-color: rgba(0, 0, 0, 0.073);
+}
+
+/* right of nav */
+
+
+nav .right {
+    display: flex;
+
+}
+
+nav .right i {
+    font-size: 1.5rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+nav .right i:hover {
+    background-color: rgba(0, 0, 0, 0.073);
+}
+
+nav .right #profile {
+    margin-left: 1rem;
+
+}
+
+nav .sidebar {
+    position: absolute;
+    width: 100vw;
+    /* left: -100%; */
+    top: 0px;
+    height: 100vh;
+
+    /* background-color: white; */
+    overflow-y: auto;
+    transition: all;
+    transition-duration: 0.3s;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+    display: flex;
+
+
+}
+
+nav .sidebar .left {
+    width: 240px;
+
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 5px 5px 10px #f0f0f0,
+        -5px -5px 10px #ffffff;
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+
+}
+
+nav .sidebar .left .first-menu {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.312);
+    padding-bottom: 1rem;
+}
+
+nav .sidebar .left .options {
+
+    display: flex;
+    width: 80%;
+    align-items: center;
+    gap: 1rem;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+nav .sidebar .left .options:hover {
+
+    background-color: rgba(0, 0, 0, 0.082);
+
+
+}
+
+nav .sidebar .left .options img {
+    height: 2rem;
+}
+
+
+
+nav .sidebar .right {
+    width: calc(100% - 240px);
+    background-color: rgba(0, 0, 0, 0.222);
+    height: 100%;
+    transition: all;
+    /* transition-delay: 0.3s; */
+    transition-duration: 1s;
+}
+
+nav .sidebar .left .top {
+    width: 100%;
+
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    padding: 7px 25px;
+}
+
+#sec-searchbtn {
+    display: none;
+}
+
+/* Signup page css*/
+#signup-btn {
+    border: 1px solid #1360D7;
+    display: flex;
+    align-items: center;
+    color: #1360D7;
+    padding-right: 1rem;
+    cursor: pointer;
+    border-radius: 10px;
+    text-wrap: nowrap;
+}
+
+#signup-btn:hover {
+    opacity: 0.7;
+}
+
+.signupPage {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.334);
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    /* Adjust the px value to control the amount of blur */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Optional: Add a semi-transparent background color */
+}
+
+.profilePage {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: white; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    backdrop-filter: blur(10px);
+    /* Adjust the px value to control the amount of blur */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Optional: Add a semi-transparent background color */
+    display: flex;
+
+}
+
+.createChannel {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: white; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    backdrop-filter: blur(10px);
+    /* Adjust the px value to control the amount of blur */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Optional: Add a semi-transparent background color */
+    display: flex;
+    padding-top: 6vw;
+    justify-content: center;
+}
+
+.VideoUpload-page {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: white; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    backdrop-filter: blur(10px);
+    /* Adjust the px value to control the amount of blur */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Optional: Add a semi-transparent background color */
+    display: flex;
+    padding-top: 6vw;
+    justify-content: center;
+}
+
+.notification-page {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: white; */
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    backdrop-filter: blur(10px);
+    /* Adjust the px value to control the amount of blur */
+    background-color: rgba(255, 255, 255, 0.5);
+    /* Optional: Add a semi-transparent background color */
+    display: flex;
+    padding-top: 6vw;
+    justify-content: center;
+}
+
+@media (max-width:800px) {
+    nav .mid .search .sbar input {
+        width: 30vw;
+        font-size: 1rem;
+        border: 0px;
+        outline: none;
+    }
+}
+
+@media (max-width:700px) {
+    nav .mid {
+        display: none;
+    }
+
+    /* #vid-add {
+        display: none;
+
+    } */
+
+    #sec-searchbtn {
+        display: inline;
+
+    }
+
+    /* #mnubtn {
+        z-index: 100;
+    } */
+
+    nav {
+        width: 100%;
+        padding: 0.5rem 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav .right #profile {
+        margin-left: 0rem;
+
+    }
+    .your-profile {
+       
+        margin-right: 1rem;
+    }
+}

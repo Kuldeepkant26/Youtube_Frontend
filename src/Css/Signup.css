@@ -1,0 +1,64 @@
+.signup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 40%;
+    height: fit-content;
+    min-width: 390px;
+    gap: 1rem;
+    margin-top: 5rem;
+}
+
+.signup-form input {
+    width: 100%;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid black;
+    padding: 10px 0px;
+}
+
+.signup-form .password-cont {
+    width: 100%;
+    position: relative;
+}
+
+.signup-form .password-cont i {
+    position: absolute;
+    right: 0px;
+    cursor: pointer;
+    bottom: 10px;
+}
+
+.signup-form .top {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.signup-form .top p {
+    font-size: 1.3rem;
+    font-weight: 600;
+
+}
+
+.signup-form .btn {
+    width: 100%;
+    border: 0px;
+    outline: none;
+    background-color: #FF0000;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+@media (max-width:600px) {
+    .signup-form {
+        margin-top: 8rem;
+    }
+}

@@ -1,0 +1,37 @@
+.cmnt{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.244);
+    padding-bottom: 0.4rem;
+   
+}
+
+.right-comment {
+   
+    display: flex;
+    gap: 1rem;
+    position: relative;
+    
+}
+
+.right-comment .commnent-menu {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    gap: 5px;
+    font-size: 0.7rem;
+    border-radius: 10px;
+    position: absolute;
+    right: 2rem;
+
+
+}
+
+.right-comment .commnent-menu span {
+    background-color: rgba(0, 0, 0, 0.075);
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+    text-wrap: nowrap;
+
+}

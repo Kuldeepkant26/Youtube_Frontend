@@ -1,0 +1,31 @@
+.suggested-video-card {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    
+}
+
+.suggested-video-card .suggested-video-thumb {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.suggested-video-card .suggested-video-thumb {
+    width: 100%;
+}
+
+.suggested-video-card .suggested-video-bottomt {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.suggested-video-card .suggested-video-bottomt .suggested-video-clogo {
+    width: 3rem;
+    height: 3rem;
+    object-fit: cover;
+    border-radius: 50%;
+}

@@ -1,0 +1,41 @@
+.Search-page {
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    overflow: hidden;
+    background-color: white;
+    overflow-y: scroll;
+    padding-top: 4.5rem;
+}
+
+.Search-page .top {
+
+    display: flex;
+    padding: 0.5rem;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+
+}
+
+.Search-page .btm {
+
+    width: 100%;
+
+}
+
+.Search-page .top input {
+
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.038);
+    padding: 0.5rem;
+    border-radius: 20px;
+    width: 80%;
+}

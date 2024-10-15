@@ -1,0 +1,73 @@
+.video-upload-form {
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.055);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: fit-content;
+    gap: 1rem;
+}
+
+.video-upload-form h1 {
+    color: red;
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: 100%;
+    text-align: center;
+}
+
+.video-upload-form input {
+    width: 100%;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid grey;
+    padding: 10px 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.video-upload-form textarea {
+    width: 100%;
+    border: 0px;
+    outline: none;
+    border-bottom: 1px solid grey;
+    padding: 10px 0px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.video-upload-form .btns {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.video-upload-form .btns .cancel {
+    background-color: red;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+.video-upload-form .btns .upload {
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+.video-upload-form .btns div:hover {
+    opacity: 0.6;
+}
+
+@media (max-width:600px) {
+    .video-upload-form {
+        width: 98%;
+        background-color: rgba(0, 0, 0, 0.055);
+    }
+}

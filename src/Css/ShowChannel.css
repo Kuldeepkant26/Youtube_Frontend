@@ -1,0 +1,42 @@
+.channel-page {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    padding-top: 5rem;
+}
+
+.channel-page .banner {
+    width: 100%;
+    height: 36vh;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.channel-page .mid {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid grey;
+}
+
+.channel-page .mid img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.channel-page .mid .right i {
+    background-color: rgba(0, 0, 0, 0.499);
+    color: white;
+    height: 1rem;
+    width: 1rem;
+    border-radius: 50%;
+    margin-left: 0.5rem;
+    padding: 0.2rem;
+}
+
