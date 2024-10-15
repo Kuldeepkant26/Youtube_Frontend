@@ -53,7 +53,7 @@ function ShowVideo() {
         });
     };
     const handelLike = async () => {
-       
+        toast.info('Loading...')
         try {
             console.log('like')
             if (!curruser) {
@@ -68,6 +68,7 @@ function ShowVideo() {
         }
     }
     const handelSubscribe = async () => {
+        toast.info('Loading...')
         try {
             if (!curruser) {
                 return toast.warn("Please login first")
@@ -81,6 +82,7 @@ function ShowVideo() {
         }
     }
     const handelUnSubscribe = async () => {
+        toast.info('Loading...')
         try {
             if (!curruser) {
                 return alert("Please login first")
