@@ -24,6 +24,7 @@ function Comment({ comment, id }) {
             if (newcomment === '') {
                 return toast.warn("Can't be empty")
             }
+
             toast.info('Updating...')
             const res = await axios.put(`${import.meta.env.VITE_BURL}/videos/comment/update/${comment._id}`, {
                 newcomment

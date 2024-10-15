@@ -23,15 +23,16 @@ function ShowVideo() {
 
     const [comment, setComment] = useState('');
     const submitComment = async () => {
-        toast.info("Loading wait");
+
         try {
-            console.log('commenting')
+
             if (!curruser) {
                 return toast.warn("Please login first")
             }
             if (comment === '') {
                 return toast.warn('Please enter somthing');
             }
+            toast.info("Loading wait");
             const res = await axios.post(`${import.meta.env.VITE_BURL}/videos/comment/${video._id}/${curruser._id}`, {
                 comment
             });
@@ -53,12 +54,13 @@ function ShowVideo() {
         });
     };
     const handelLike = async () => {
-        toast.info('Loading...')
+       
         try {
             console.log('like')
             if (!curruser) {
                 return toast.warn("Please login first")
             }
+            toast.info('Loading...')
             const res = await axios.put(`${import.meta.env.VITE_BURL}/videos/like/${video._id}/${curruser._id}`);
             toast.success(res.data.message);
             fetchVideo(id);
@@ -68,11 +70,12 @@ function ShowVideo() {
         }
     }
     const handelSubscribe = async () => {
-        toast.info('Loading...')
+       
         try {
             if (!curruser) {
                 return toast.warn("Please login first")
             }
+            toast.info('Loading...')
             const res = await axios.put(`${import.meta.env.VITE_BURL}/channel/subscribe/${video.channelId._id}/${curruser._id}`);
             console.log(res);
             toast.success(res.data.message);
@@ -82,11 +85,12 @@ function ShowVideo() {
         }
     }
     const handelUnSubscribe = async () => {
-        toast.info('Loading...')
+       
         try {
             if (!curruser) {
                 return alert("Please login first")
             }
+            toast.info('Loading...')
             const res = await axios.put(`${import.meta.env.VITE_BURL}/channel/unsubscribe/${video.channelId._id}/${curruser._id}`);
             console.log(res);
             toast.success(res.data.message);

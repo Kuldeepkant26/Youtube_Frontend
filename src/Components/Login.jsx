@@ -10,11 +10,12 @@ function Login() {
     const [password, setPassword] = useState('');
 
     async function handelLogin() {
-        toast.info("Loading wait");
+       
         try {
             if (email === '' || password === '') {
                 return toast.warn("Fillup all fields");
             }
+            toast.info("Loading wait");
             const res = await axios.post(`${import.meta.env.VITE_BURL}/auth/login`, {
                 email, password
             });

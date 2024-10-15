@@ -11,11 +11,12 @@ function Signup() {
     const { showsignup, setShowsignup, showlogin, setShowlogin, curruser, setCurruser } = useContext(MyContext);
     const [showpass, setshowpass] = useState(true);
     async function handelSignup() {
-        toast.info("Loading wait");
+
         try {
             if (name === '' || email === '' || password === '') {
                 return toast.warn("Fillup all fields");
             }
+            toast.info("Loading wait");
             const res = await axios.post(`${import.meta.env.VITE_BURL}/auth/signup`, {
                 name, email, password
             });
