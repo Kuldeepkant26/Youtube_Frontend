@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import '../Css/Profile.css';
 import { MyContext } from '../Context/MyProvider';
 import { Link } from 'react-router-dom'
+import { toast } from 'react-toastify';
 
 function Profile() {
     const { curruser, logout, showProfile, setShowProfile, setShowCreateChannel } = useContext(MyContext);
@@ -17,7 +18,7 @@ function Profile() {
                 <div className="profile-menu">
                     {!curruser.channel ?
                         <div className='btn' onClick={() => { setShowProfile(false), setShowCreateChannel(true) }}>Create channel</div> :
-                        <Link to={`/channel/${curruser.channel._id}`} className='btn' onClick={() => { setShowProfile(false) }}>View Channel</Link>
+                        <Link to={`/channel/${curruser.channel._id}`} className='btn' onClick={() => { setShowProfile(false),toast.info('Loading') }}>View Channel</Link>
 
                     }
                     <div className='btn' onClick={() => { logout(), setShowProfile(false) }}><i className="ri-logout-box-r-line"></i>Logout</div>

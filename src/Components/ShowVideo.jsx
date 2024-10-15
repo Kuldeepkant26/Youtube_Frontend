@@ -140,7 +140,7 @@ function ShowVideo() {
                     <p className='desc pl-2'>{video.title}</p>
                     <div className="btns pl-1">
                         <img src={video.channelId.logoUrl} alt="" />
-                        <Link to={`/channel/${video.channelId._id}`}>
+                        <Link to={`/channel/${video.channelId._id}`} onClick={() => toast.info('Loading')}>
                             <p className='ch-name font-semibold'>{video.channelId.name} <i className="ri-check-line text-sm text-white bg-gray-400 rounded-full "></i></p>
                             <p>{video.channelId.subscribers.length} subscribers</p>
                         </Link>
