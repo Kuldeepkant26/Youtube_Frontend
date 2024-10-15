@@ -31,7 +31,7 @@ function Navbar() {
                     <h2><i className="ri-youtube-fill yti"></i>Youtube<span>IN</span></h2>
                 </div>
                 <div className="mid">
-                    <div className="search">
+                    <div className="search" onClick={() => navigate('/')}>
                         <div className="sbar">
                             {isFocused && ( // Show icon only when input is focused
                                 <i id='sio' className="ri-search-line pr-1 pl-2"></i>
