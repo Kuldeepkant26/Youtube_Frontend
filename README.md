@@ -1,8 +1,6 @@
 # React + Vite
-# Warning -----------------------------------
- Dont open in chrome , open in another browser
 
-Live link - https://youtube-frontend-bn7y.vercel.app/
+Live link - https://670f41ff0a3d05d7588bc370--youtube26.netlify.app/
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
