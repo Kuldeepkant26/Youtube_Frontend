@@ -1,6 +1,6 @@
 # React + Vite
 
-Live link - https://670f41ff0a3d05d7588bc370--youtube26.netlify.app/
+Live link (Don't open in chrome) - https://670f41ff0a3d05d7588bc370--youtube26.netlify.app/
 
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
